@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400&display=swap');
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    --fuente-heading:'Poppins';
+    --fuente-body:'Open Sans';
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Violet);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.logo{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+    .logo{
+        margin-bottom: 1rem;
+    } 
+}
+
+.landing{
+    background: url(../images/bg-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+@media (min-width: 768px){
+    .landing{
+        background: url(../images/bg-desktop.svg); 
+    } 
+}
+
+.landing-flex{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+        .landing-flex{
+            text-align: left;
+            display: flex;
+            gap: 28rem;
+            
+        }
+    } 
+
+
+
+
+.landing-img{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px){
+    .landing-img{
+        width: 250%;
+        margin-bottom: 0rem;
+    } 
+}
+
+.titulo{
+    color: white;
+    font-family: var(--fuente-heading);
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.parrafo{
+    color: white;
+    font-family: var(--fuente-body);
+    font-weight: 20px;
+    font-size: 17.5px;
+}
+
+.btn{
+    font-size: 17px;
+    padding: .8rem 6rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    margin-top: 2rem;
+    box-shadow: 1px 5px rgba(6, 0, 17, 0.055);
+}
+
+.btn:hover{
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--Violet);
+    font-family: var(--fuente-heading);
+}
+
+
+
+.iconos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    gap: 1rem;
+
+ 
+}
+
+@media (min-width: 768px){
+    .iconos{
+        display: block;
+        text-align: right;
+        justify-content: right;
+        gap: 1rem;
+     
+    } 
+}
+
+
+
+.fa-brands{
+    padding: .2rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px){
+    
+    .fa-brands{
+        margin-top: 1rem;
+        margin-bottom: -50rem;
+
+    }
+}
+
+
+
+.fa-brands:hover{
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+
+}
+
+
+
+
+
+
+
+
